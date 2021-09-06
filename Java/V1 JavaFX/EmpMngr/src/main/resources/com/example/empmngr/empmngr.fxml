@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+<VBox spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.empmngr.EmpMngrController">
+    <HBox style="-fx-background-color: grey;">
+        <Button fx:id="loadAll" text="Load from Database" onAction="#loadAll"/>
+        <Button fx:id="saveAll" text="Save to Database" onAction="#saveAll"/>
+        <Button fx:id="importFile" text="Import From File" onAction="#importFile"/>
+        <Button fx:id="exportFile" text="Export to File" onAction="#exportFile"/>
+<!--        <Button fx:id="importFireStore" text="Import From Firebase" onAction="#importFromFirebase"/>-->
+<!--        <Button fx:id="exportFireStore" text="Export to Firebase" onAction="#exportToFirebase"/>-->
+    </HBox>
+    <HBox alignment="CENTER">
+        <VBox>
+            <Label>Employees</Label>
+            <ListView fx:id="employeeList" onMouseClicked="#listMouseClick">
+
+            </ListView>
+            <HBox  maxWidth="Infinity" alignment="CENTER">
+                <VBox  maxWidth="Infinity">
+                    <Button fx:id="newEmployee"  maxWidth="Infinity" onAction="#newEmployee">New Employee</Button>
+                    <Button fx:id="deleteEmployee"  maxWidth="Infinity" onAction="#deleteEmployee">Delete Employee</Button>
+                </VBox>
+                <VBox>
+                    <Button fx:id="showEmployee"  maxWidth="Infinity" onAction="#showEmployeeBtnClick">Show Employee</Button>
+                    <Button fx:id="clearEmployees"  maxWidth="Infinity" onAction="#clearEmployeeList">Clear Employees</Button>
+                </VBox>
+            </HBox>
+
+        </VBox>
+
+
+        <GridPane alignment="center" hgap="10" vgap="10" minWidth="500" >
+            <padding>
+                <Insets top="25" right="25" bottom="25" left="25"/>
+            </padding>
+
+                <Label GridPane.columnIndex="0" GridPane.rowIndex="0" minWidth="100">Employee ID:</Label>
+                <Label fx:id="employee_id" GridPane.columnIndex="1" GridPane.rowIndex="0" minWidth="200"> </Label>
+
+                <Label GridPane.columnIndex="0" GridPane.rowIndex="1">First Name:</Label>
+                <TextField fx:id="employee_firstname" GridPane.columnIndex="1" GridPane.rowIndex="1"> </TextField>
+
+                <Label GridPane.columnIndex="0" GridPane.rowIndex="2">Last Name:</Label>
+                <TextField fx:id="employee_lastname" GridPane.columnIndex="1" GridPane.rowIndex="2"> </TextField>
+
+                <Label GridPane.columnIndex="0" GridPane.rowIndex="3">Department:</Label>
+                <TextField fx:id="employee_department" GridPane.columnIndex="1" GridPane.rowIndex="3"> </TextField>
+
+                <Label GridPane.columnIndex="0" GridPane.rowIndex="4">Salary:</Label>
+                <TextField fx:id="employee_salary" GridPane.columnIndex="1" GridPane.rowIndex="4"> </TextField>
+
+            <Button fx:id="save" GridPane.columnIndex="0" GridPane.rowIndex="5" onAction="#save">Set Employee Changes</Button>
+            <Button fx:id="discard" GridPane.columnIndex="1" GridPane.rowIndex="5" onAction="#discard">Discard Employee Changes</Button>
+
+        </GridPane>
+    </HBox>
+
+</VBox>

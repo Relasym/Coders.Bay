@@ -19,10 +19,10 @@ import java.util.ArrayList;
 
 
 public class EmpMngrController {
-    @FXML
-    private Button importFireStore;
-    @FXML
-    private Button exportFireStore;
+//    @FXML
+//    private Button importFireStore;
+//    @FXML
+//    private Button exportFireStore;
     private EmpMngr mngr;
     protected MongoCollection<Document> employeeCollection;
     private ArrayList<Document> employeesArrayList;

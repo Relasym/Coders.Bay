@@ -16,8 +16,8 @@
         <Button fx:id="saveAll" text="Save to Database" onAction="#saveAll"/>
         <Button fx:id="importFile" text="Import From File" onAction="#importFile"/>
         <Button fx:id="exportFile" text="Export to File" onAction="#exportFile"/>
-        <Button fx:id="importFireStore" text="Import From Firebase" onAction="#importFromFirebase"/>
-        <Button fx:id="exportFireStore" text="Export to Firebase" onAction="#exportToFirebase"/>
+<!--        <Button fx:id="importFireStore" text="Import From Firebase" onAction="#importFromFirebase"/>-->
+<!--        <Button fx:id="exportFireStore" text="Export to Firebase" onAction="#exportToFirebase"/>-->
     </HBox>
     <HBox alignment="CENTER">
         <VBox>
