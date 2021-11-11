@@ -1,0 +1,143 @@
+:root {
+    box-sizing: border-box;
+    margin: 0;
+    
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(117, 117, 255);
+    height: 15vh;
+}
+
+body {
+    height: 97vh;
+}
+
+main {
+    background-color: lightgray;
+    min-height: 72vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.maindiv {
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+}
+
+.sidebar {
+    width: 10vw;
+    min-width: 100px;
+    background-color: darkgray;
+    display:flex;
+    flex-direction: column;
+
+}
+.contentdiv {
+    width:auto;
+    flex-grow: 1;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+button, input[type=submit]{
+    background: lightgray;
+    border: 3px solid blue;
+    border-radius: 3px;
+    font-size: 80%;
+    margin: 2px;
+}
+
+button:hover, input[type=submit]:hover{
+    background: blue;
+    border: 3px solid blue;
+    border-radius: 3px;
+    
+}
+
+#datacontentdiv {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    background-color: darkgray;
+}
+
+footer div {
+    font-size: 60%;
+}
+
+#loginform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30vw;
+    min-width: 200px;
+    background-color: darkgray;
+    border-radius: 5px;
+    margin-top: 2vh;
+}
+
+.logoutbutton {
+    width: 50px;
+    flex-shrink: 1;
+}
+.databutton {
+    width: 100px;
+    flex-shrink: 1;
+}
+
+.loginform {
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+}
+input[type='submit'] {
+    display: block;
+    margin:auto;
+}
+.loginbutton {
+    display: block;
+    margin:auto;
+}
+.registerbutton {
+    display: block;
+    margin:auto;
+}
+
+th, td {
+    border-bottom: 1px solid darkgrey;
+    padding:8px;
+  }
+
+  table {
+      border-spacing: 0;
+  }
+
+tr:hover {
+    background-color: darkgray;
+}
+
+.hidden {
+    display:none;
+}

@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+}
+
+main {
+    
+}
+.grid {
+    display:grid;
+    border: 3px solid blue;
+    grid-template-columns: repeat(4,1fr);
+    width: 40vw;
+    height: 40vw;
+    
+}
+.griditem {
+    display:none;
+    border: 3px solid red;
+    width:100px;
+    height:100px;
+}
+.item1,.item2,.item3 {
+    display:block;
+}

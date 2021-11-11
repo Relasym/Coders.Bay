@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wer wird Millionär?</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/logo1.png" alt=""></a>
+        </div>
+        <div class="text">
+            <a href=""><h1>Wer wird Millionär?</h1></a>
+        </div>
+        <button class="helpbutton" onclick="helpFunction()"><span class="material-icons">help_outline</span></button>
+        <div class="helppanel">
+            <div class=helppanelflex>
+                <div>Klicke unten auf die richtige Antwort um zu gewinnen!</div>
+                
+            </div>
+        </div>
+    </header>
+
+    <div class="layoutbox">
+        <div class="sidebar">
+            <ul class="sidebarlist">
+                <li class="sidebartext">Frage 1</li>
+                <li class="sidebartext">Frage 2</li>
+                <li class="sidebartext">Frage 3</li>
+                <li class="sidebartext">Frage 4</li>
+                <li class="sidebartext">Frage 5</li>
+                <li class="sidebartext">Frage 6</li>
+            </ul>
+
+        </div>
+        <div class="mainpage">
+            <div class="question">Welche Antwortmöglichkeit fehlt?</div>
+            <div class="answerbox">
+                <button class="answer answer1" onclick="wrongFunction()"><span class="material-icons">A</span></button> 
+                <button class="answer answer2" onclick="wrongFunction()"><span class="material-icons">B</span></button> 
+                <button class="answer answer3" onclick="wrongFunction()"><span class="material-icons">C</span></button> 
+                <button class="answer answer4 troll" onclick="correctFunction()"><span class="material-icons">D</span></button> 
+            </div>
+        </div>
+
+    
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/projekt.js"></script>
+</body>
+</html>
